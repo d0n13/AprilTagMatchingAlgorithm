@@ -33,4 +33,6 @@ func compare(generated: [Int], scanned: [Int]) -> [Int] {
 var generated = [1, 3, 4, 3, 2, 1, 2, 1, 3, 4]   // Expected
 var scanned =   [1 ,3, 4,    2,    2, 1, 3]      // What we got
 let output = compare(generated: generated, scanned: scanned)
+
+# output [1, 3, 4, -1, 2, -1, 2, 1, 3, -1]
 ```
